@@ -586,6 +586,7 @@ body.dark-theme {
 .skills__blob
 {
   display: grid;
+  transition: .3s;
 }
 
 .skills__info
