@@ -58,11 +58,16 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .3s; /* For animation dark mode */
+  align-items: center;
+  justify-content: center;
 }
 
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: 600;
+  text-align: center;
+  justify-self: center;
+  cursor: default;
 }
 
 ul {
@@ -105,29 +110,7 @@ body.dark-theme {
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-.dark-theme .button__gray {
-  background-color: var(--container-color);
-}
 
-.dark-theme .button__gray:hover {
-  background-color: hsl(var(--hue), 24%, 16%);
-}
-
-.dark-theme .filters__content {
-  background-color: var(--container-color);
-}
-
-.dark-theme::-webkit-scrollbar {
-  background-color: hsl(var(--hue), 8%, 16%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--hue), 8%, 24%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(var(--hue), 8%, 32%);
-}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -433,18 +416,20 @@ body.dark-theme {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: .6rem;
+  width: .5rem;
+  margin-left: 100px;
   border-radius: .5rem;
-  background-color: hsl(var(--hue), 8%, 66%);
+  background-color: var(--body-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--hue), 8%, 54%);
+  background-color: var(--text-color);
   border-radius: .5rem;
+  transition: all .3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(var(--hue), 8%, 44%);
+  background-color: var(--text-color-light);
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -660,4 +645,57 @@ body.dark-theme {
   80%{
     transform: translate(0); 
   }
+}
+
+.emegi-gecenler-kutu
+{
+  width: 300px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  cursor: default;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emegi-gecenler-kutu h2
+{
+  padding: 0px 0px;
+  font-size: 20px;
+  cursor: default;
+}
+
+.emegi-gecenler-kutu ul
+{
+  position: relative;
+  background: var(--body-color);
+  width: 100%;
+  display: table;
+  cursor: default;
+}
+
+.emegi-gecenler-kutu ul:hover li
+{
+  opacity: 0.2;
+}
+
+.emegi-gecenler-kutu ul li
+{
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  background: var(--body-color);
+  transition: all 0.5s;
+  border-radius: 5rem;
+}
+
+.emegi-gecenler-kutu ul li:hover
+{
+  transform: scale(1.1);
+  z-index: 100;
+  background: var(--text-color);
+  box-shadow: 0 5px 25px rgba(0,0,0,.2);
+  color: var(--body-color);
+  opacity: 1;
 }
