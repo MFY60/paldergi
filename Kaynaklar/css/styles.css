@@ -1,23 +1,12 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-      Blue: hsl(207, 90%, 61%)
-      Purple: hsl(250, 66%, 75%)
-      Pink: hsl(356, 66%, 75%)
-      Teal: hsl(174, 63%, 62%)
-  */
-
   --hue: 207;
   --sat: 90%;
   --lig: 61%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%); 
   --text-color-light: hsl(var(--hue), 8%, 75%);
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --title-color: hsl(var(--hue), 12%, 95%);
@@ -25,8 +14,6 @@
   --body-color: hsl(var(--hue), 40%, 8%);
   --container-color: hsl(var(--hue), 24%, 12%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -45,7 +32,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -57,7 +44,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s; /* For animation dark mode */
+  transition: .3s;
   align-items: center;
   justify-content: center;
 }
@@ -83,7 +70,7 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
+/*=============== Tema ===============*/
 .change-theme {
   position: absolute;
   top: 1.5rem;
@@ -98,7 +85,7 @@ img {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
+/*========== Koyu Tema Renkleri ==========*/
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
@@ -106,13 +93,6 @@ body.dark-theme {
   --container-color: #fff;
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
-
-
-/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
   margin-left: 1.5rem;
@@ -346,6 +326,7 @@ body.dark-theme {
 /*=============== SKILLS ===============*/
 .skills__content {
   row-gap: 3.5rem;
+  cursor: default;
 }
 
 .skills__title {
@@ -420,11 +401,13 @@ body.dark-theme {
   margin-left: 100px;
   border-radius: .5rem;
   background-color: var(--body-color);
+  transition: all .3s;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--text-color);
   border-radius: .5rem;
+  transition: all .3s;
   transition: all .3s;
 }
 
@@ -578,6 +561,7 @@ body.dark-theme {
 {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem 2rem;
+  cursor: default;
 }
 
 .skills__data
@@ -595,23 +579,32 @@ body.dark-theme {
   place-items: center;
   margin-bottom: 1rem;
   justify-self: center;
+  cursor: pointer;
 }
 
 .skills__blob img
 {
   width: 40px;
+  cursor: pointer;
+}
+
+.skills__data a
+{
+  cursor: pointer;
 }
 
 .skills__name
 {
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
+  cursor: pointer;
 }
 
 .skills__subtitle
 {
   font-size: var(--tiny-font-size);
   color: var(--text-color-light);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px)
