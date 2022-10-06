@@ -64,3 +64,7 @@ sr.reveal(`.filters`, {delay: 600})
 sr.reveal(`.section__title`, {delay: 700})
 sr.reveal(`.skills__content`, {delay: 100})
 sr.reveal(`.emek_liste`, {delay: 500})
+
+
+
+

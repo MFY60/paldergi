@@ -692,3 +692,14 @@ body.dark-theme {
   color: var(--body-color);
   opacity: 1;
 }
+
+.profile__data img {
+  object-fit: fill;
+  border-radius: 4%;
+  padding: 5px;
+  max-height: 700px;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+  justify-self: center;
+}
+  
