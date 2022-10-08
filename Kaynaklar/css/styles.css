@@ -70,7 +70,6 @@ img {
   height: auto;
 }
 
-/*=============== Tema ===============*/
 .change-theme {
   position: absolute;
   top: 1.5rem;
@@ -85,7 +84,6 @@ img {
   color: var(--first-color);
 }
 
-/*========== Koyu Tema Renkleri ==========*/
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
@@ -104,7 +102,6 @@ body.dark-theme {
   gap: 1.5rem;
 }
 
-/*=============== PROFILE ===============*/
 .profile {
   position: relative;
   padding-top: 3.5rem;
@@ -209,7 +206,6 @@ body.dark-theme {
   column-gap: .25rem;
 }
 
-/*=============== BUTTONS ===============*/
 .button {
   display: inline-flex;
   align-items: center;
@@ -244,7 +240,6 @@ body.dark-theme {
   background-color: var(--text-color-light);
 }
 
-/*=============== FILTERS TABS===============*/
 .filters__content {
   margin: 2rem 0 2.5rem;
   background-color: var(--text-color-lighten);
@@ -274,7 +269,6 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
-/*=============== PROJECTS ===============*/
 .projects__card {
   position: relative;
   border-radius: 1rem;
@@ -323,7 +317,6 @@ body.dark-theme {
   bottom: 0;
 }
 
-/*=============== SKILLS ===============*/
 .skills__content {
   row-gap: 3.5rem;
   cursor: default;
@@ -367,7 +360,6 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
-/* Hide and show projects & skills */
 .filters [data-content] {
   display: none;
 }
@@ -376,7 +368,6 @@ body.dark-theme {
   display: grid;
 }
 
-/* Activate button filter */
 .filter-tab-active {
   background-color: var(--body-color);
 }
@@ -386,7 +377,6 @@ body.dark-theme {
   justify-content: center;
 }
 
-/*=============== FOOTER ===============*/
 .footer__copy {
   display: block;
   margin: 2.5rem 0 2rem;
@@ -395,7 +385,6 @@ body.dark-theme {
   color: var(--text-color-light);
 }
 
-/*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .5rem;
   margin-left: 100px;
@@ -415,7 +404,6 @@ body.dark-theme {
   background-color: var(--text-color-light);
 }
 
-/*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
@@ -518,8 +506,6 @@ body.dark-theme {
   }
 }
 
-
-/*=============== SKILLS ===============*/
 .skills
 {
   text-align: center;
@@ -615,7 +601,6 @@ body.dark-theme {
   }
 }
 
-/* Animation skills */
 .skills__blob:hover img
 {
   animation: bounce-skills .6s;
@@ -693,7 +678,8 @@ body.dark-theme {
   opacity: 1;
 }
 
-.profile__data img {
+.kapakkoyu
+{
   object-fit: fill;
   border-radius: 4%;
   padding: 5px;
@@ -701,5 +687,28 @@ body.dark-theme {
   margin-top: -4rem;
   margin-bottom: 3rem;
   justify-self: center;
+  transition: all .3s;
+}
+
+body.dark-theme .kapakkoyu {
+opacity: 0;
+}
+
+.kapakaçık
+{
+  position: absolute;
+  object-fit: fill;
+  border-radius: 4%;
+  padding: 5px;
+  max-height: 700px;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+  justify-self: center;
+  opacity: 0;
+  transition: all .3s;
+}
+
+body.dark-theme .kapakaçık {
+opacity: 1;
 }
   
