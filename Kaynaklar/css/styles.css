@@ -77,7 +77,8 @@ img {
   font-size: 1.25rem;
   color: var(--title-color);
   cursor: pointer;
-  transition: .3s;
+  transition: .3s; 
+  z-index: 1000;
 }
 
 .change-theme:hover {
@@ -688,6 +689,7 @@ body.dark-theme {
   margin-bottom: 3rem;
   justify-self: center;
   transition: all .3s;
+  z-index: 1;
 }
 
 body.dark-theme .kapakkoyu {
@@ -706,6 +708,7 @@ opacity: 0;
   justify-self: center;
   opacity: 0;
   transition: all .3s;
+  z-index: 1;
 }
 
 body.dark-theme .kapakaçık {
