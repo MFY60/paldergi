@@ -3,50 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Kaynaklar/img/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="Kaynaklar/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="Kaynaklar/css/aos.css" rel="stylesheet">
+    <link href="Kaynaklar/css/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Kaynaklar/css/kursor.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>PAL E-Dergi</title>
 </head>
 
 <body>
-    <header class="profile container">
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
-        <div class="profile__container grid">
-            <div class="profile__data"> 
-                    
-                <img src="Kaynaklar/img/Kapak Koyu.png" alt="DergiKapak" class="kapakkoyu">
-                <img src="Kaynaklar/img/Kapak Açık.png" alt="DergiKapak" class="kapakaçık">
-                <h2 class="profile__name">PAL E-Dergi</h2>
-                <h3 class="profile__profession">Pendik Anadolu Lisesi</h3>
-
-                <ul class="profile__social">
-                    <a href="https://www.instagram.com/pendikanadolulisesi_/" target="_blank" class="profile__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://twitter.com/pendik_anadolu/" target="_blank" class="profile__social-link">
-                        <i class="ri-twitter-line"></i>
-                    </a>
-                    <a href="https://www.facebook.com/pendikanadolu/" target="_blank" class="profile__social-link">
-                        <i class="ri-facebook-line"></i>
-                    </a>
-                    <a href="https://pendikanadolu.meb.k12.tr/tema/index.php" target="_blank" class="profile__social-link">
-                        <i class="ri-window-line"></i>
-                    </a>
+    <header class="header">
+        <div class="container">
+            <div class="logo" data-aos-delay="200" data-aos="fade-down">
+                <img src="Kaynaklar/img/favicon.png" alt="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li class="services active" data-aos-delay="200" data-aos="fade-down"><a
+                            href="#hakkimizda">Hakkımızda</a></li>
+                    <li class="portfolios" data-aos-delay="250" data-aos="fade-down"><a
+                            href="#kategoriler">Kategoriler</a></li>
+                    <li class="experience" data-aos-delay="300" data-aos="fade-down"><a href="#onlarnediyor">Onlar Ne
+                            Diyor?</a></li>
+                    <li class="blog" data-aos-delay="350" data-aos="fade-down"><a href="#emegigecenler">Emeği
+                            Geçenler</a></li>
+                    <li class="blog" data-aos-delay="350" data-aos="fade-down"><a href="#iletisim">İletişim</a></li>
                 </ul>
+            </nav>
+            <div class="right-content" data-aos-delay="500" data-aos="fade-down">
+                <div class="theme-color-toggle">
+                    <svg class="moon" viewBox="0 0 24 24">
+                        <use xlink:href="Kaynaklar/img/sprite.svg#moon-icon"></use>
+                    </svg>
+                    <svg class="sun" viewBox="0 0 24 24">
+                        <use xlink:href="Kaynaklar/img/sprite.svg#sun-icon"></use>
+                    </svg>
+                </div>
+                <svg class="mobile-menu-toggle" viewBox="0 0 24 24">
+                    <use xlink:href="Kaynaklar/img/sprite.svg#menu"></use>
+                </svg>
             </div>
         </div>
     </header>
-
-    <main class="main">
-        <section class="skills section" id="skills">
+    <main>
+        <section class="Kapak">
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <img src="Kaynaklar/img/KapakKoyu.png" alt="DergiKapak" class="kapakkoyu">
+                    <img src="Kaynaklar/img/KapakAçık.png" alt="DergiKapak" class="kapakaçık">
+                </div>
+            </div>
+        </section>
+        <section class="hero-section" id="hakkimizda">
+            <h2 class="section__title">Hakkımızda</h2>
+            <div class="container">
+                <div class="content" data-aos="fade-up">
+                    <p class="above-title mb-16">Bizim Adımız</p>
+                    <h1 class="full-name">Pendik <span class="primary">Anadolu Lisesi.</span></h1>
+                    <p class="about">Burası hakkımızda bölümü. Buraya eklemek için misyon/vizyon metinlerinizi
+                        bekliyorum. :)</p>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.instagram.com/pendikanadolulisesi_/" target="_blank">
+                                <img class="SosyalMedya" src="Kaynaklar/img/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/pendikanadolu/" target="_blank">
+                                <img class="SosyalMedya" src="Kaynaklar/img/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/pendik_anadolu/" target="_blank">
+                                <img class="SosyalMedya" src="Kaynaklar/img/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pendikanadolu.meb.k12.tr/tema/index.php" target="_blank">
+                                <img class="SosyalMedya" src="Kaynaklar/img/web.png" alt="web">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Görüntü" data-aos="fade-up">
+                    <img class="OkulResmi" src="Kaynaklar/img/Okul.png" alt="Pendik Anadolu Lisesi">
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="kategoriler">
             <h2 class="section__title">Kategoriler</h2>
             <div class="skills__container container grid section__border">
                 <!--==================== SKILLS 1 ====================-->
                 <div class="skills__content">
                     <div class="skills__info">
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="50">
                             <a href="Kategoriler/Röportaj.html">
                                 <div class="skills__blob">
                                     <img src="Kaynaklar/img/Röportaj.png" alt="skills image">
@@ -56,7 +113,7 @@
                             </a>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="150">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Günlük Olaylar.png" alt="skills image">
                             </div>
@@ -64,7 +121,7 @@
                             <span class="skills__subtitle">11 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="250">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Bilimsel Olaylar.png" alt="skills image">
                             </div>
@@ -72,7 +129,7 @@
                             <span class="skills__subtitle">13 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="350">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Resim.png" alt="skills image">
                             </div>
@@ -80,14 +137,14 @@
                             <span class="skills__subtitle">22 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="450">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Karikatür.png" alt="skills image">
                             </div>
                             <h3 class="skills__name">Karikatürler</h3>
                             <span class="skills__subtitle">19 Çalışma</span>
                         </div>
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="550">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Gezi ve İnceleme.png" alt="skills image">
                             </div>
@@ -95,7 +152,7 @@
                             <span class="skills__subtitle">20 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="650">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Kitap Yorumları.png" alt="skills image">
                             </div>
@@ -103,7 +160,7 @@
                             <span class="skills__subtitle">15 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="750">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Edebiyat.png" alt="skills image">
                             </div>
@@ -111,7 +168,7 @@
                             <span class="skills__subtitle">14 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="850">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Tarih.png" alt="skills image">
                             </div>
@@ -119,7 +176,7 @@
                             <span class="skills__subtitle">17 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="950">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Coğrafya.png" alt="skills image">
                             </div>
@@ -127,7 +184,7 @@
                             <span class="skills__subtitle">23 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="1050">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Felsefe.png" alt="skills image">
                             </div>
@@ -135,7 +192,7 @@
                             <span class="skills__subtitle">18 Çalışma</span>
                         </div>
 
-                        <div class="skills__data">
+                        <div class="skills__data" data-aos="fade-up" data-aos-delay="1150">
                             <div class="skills__blob">
                                 <img src="Kaynaklar/img/Matematik.png" alt="skills image">
                             </div>
@@ -146,16 +203,41 @@
                 </div>
             </div>
         </section>
-        <section class="emegi-gecenler">
+        <section class="testimonial-section" id="onlarnediyor">
+            <h2 class="section__title">Onlar Ne Diyor?</h2>
+            <div class="container">
+                <div class="testimonial-item-wrapper">
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="50">
+                        <img class="avatar" src="Kaynaklar/img/VictorHugo.png" alt="Amelia Miller">
+                        <p class="text">"Okumak gıdadır. Okuyan insan, insanlık bilen insandır."</p>
+                        <p class="name">Victor Hugo</p>
+                        <p class="tag job-title">Fransız şair, romancı ve oyun yazarı</p>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                        <img class="avatar" src="Kaynaklar/img/HacıBektaş-ıVeli.jpg" alt="Amelia Miller">
+                        <p class="text">"Bilimden gidilmeyen yolun sonu, karanlıktır."</p>
+                        <p class="name">Hacı Bektaş-ı Veli</p>
+                        <p class="tag job-title">Şair ve mutasavvıf</p>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="150">
+                        <img class="avatar" src="Kaynaklar/img/HenryClausen.jpg" alt="Amelia Miller">
+                        <p class="text">"Öğrenmek pahalıdır; ama cehalet çok daha pahalıdır."</p>
+                        <p class="name">Henry Clausen</p>
+                        <p class="tag job-title">Amerikalı avukat ve araştırmacı</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="emegi-gecenler" id="emegigecenler">
             <div class="emegi-gecenler-kutu container grid">
                 <h1 class="section__title">Emeği Geçenler</h1>
                 <h2 class="section__title">Danışman Öğretmenler</h2>
-                <ul class="emek_liste">
+                <ul class="emek_liste" data-aos="fade-up" data-aos-delay="100">
                     <li>Suat Yazar</li>
                     <li>Gülçin Atay</li>
                 </ul>
                 <h2 class="section__title">Site Tasarımcıları</h2>
-                <ul class="emek_liste">
+                <ul class="emek_liste" data-aos="fade-up" data-aos-delay="100">
                     <li>Melikşah Fahri Yalçın</li>
                     <li>Hakan Babahasan</li>
                     <li>Murat Han Öztürk</li>
@@ -167,7 +249,7 @@
                     <li>Esma Yaren Yetiz</li>
                 </ul>
                 <h2 class="section__title">İçerik Üreticileri</h2>
-                <ul class="emek_liste">
+                <ul class="emek_liste" data-aos="fade-up" data-aos-delay="100">
                     <li>Gül Duran</li>
                     <li>Ayşe Meryem Canan</li>
                     <li>İrem Aylin Yalınpala</li>
@@ -199,17 +281,82 @@
                 </ul>
             </div>
         </section>
+        <section class="contact-section" id="iletisim">
+            <div class="container">
+                <h2 class="section__title">İletişim</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-info-item" data-aos="fade-up" data-aos-delay="50">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24">
+                                    <use xlink:href="Kaynaklar/img/sprite.svg#address-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Adres</h4>
+                                <p class="body">Batı Mah. Hatboyu Cd. Çamlık Mevkii No 16 Pendik / İstanbul</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24">
+                                    <use xlink:href="Kaynaklar/img/sprite.svg#phone-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Telefon</h4>
+                                <p class="body">0 216 354 00 59</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24">
+                                    <use xlink:href="Kaynaklar/img/sprite.svg#email-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h4 class="title">E-mail</h4>
+                                <p class="body">paldergi2023@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!--=============== Footer ===============-->
-    <footer class="footer container">
-        <span class="footer__copy">
-            &#169; Melikşah Fahri Yalçın. All rigths reserved.
-        </span>
+    <footer class="footer">
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.instagram.com/pendikanadolulisesi_/" target="_blank">
+                    <img class="SosyalMedya" src="Kaynaklar/img/instagram.png" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/pendikanadolu/" target="_blank">
+                    <img class="SosyalMedya" src="Kaynaklar/img/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/pendik_anadolu/" target="_blank">
+                    <img class="SosyalMedya" src="Kaynaklar/img/twitter.png" alt="twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://pendikanadolu.meb.k12.tr/tema/index.php" target="_blank">
+                    <img class="SosyalMedya" src="Kaynaklar/img/web.png" alt="web">
+                </a>
+            </li>
+        </ul>
+        <p class="copyright" data-aos="fade-up" data-aos-delay="100">© <span class="year">year</span> - Melikşah
+            Fahri<span class="bold"> Yalçın</span></p>
     </footer>
-
-    <script src="Kaynaklar/js/Animasyon.js"></script>
-    <script src="Kaynaklar/js/main.js"></script>
 </body>
+<script src="Kaynaklar/js/aos.js"></script>
+<script src="Kaynaklar/js/swiper-bundle.min.js"></script>
+<script src="Kaynaklar/js/kursor.js"></script>
+<script src="Kaynaklar/js/svg4everybody.min.js"></script>
+<script src="Kaynaklar/js/css-vars-ponyfill.min.js"></script>
+<script src="Kaynaklar/js/unfetch.js"></script>
+<script src="./script.js"></script>
 
 </html>
