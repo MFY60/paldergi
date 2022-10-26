@@ -2,13 +2,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Koyu tema
     var prevAktifTheme = localStorage.getItem("theme-color");
     document.documentElement.setAttribute("data-theme", prevAktifTheme ? prevAktifTheme : "light");
-    var themeToggle = document.getElementsByClassName('TemaRengiButon')[0];
-    themeToggle.onclick = function () {
-        var currentTheme = document.documentElement.getAttribute("data-theme");
-        var switchToTheme = currentTheme === "dark" ? "light" : "dark";
-        localStorage.setItem("theme-color", switchToTheme)
-        document.documentElement.setAttribute("data-theme", switchToTheme);
-    }
 
     // Animasyon
     AOS.init({
