@@ -1078,7 +1078,7 @@ a {
 
 .Kategorilerİsim {
     font-size: var(--OrtaFontBoyutu);
-    margin-bottom: .25rem;
+    margin-top: 0;
     cursor: pointer;
 }
 
