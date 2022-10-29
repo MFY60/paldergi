@@ -3,7 +3,7 @@
 
 :root {
     --Sarı: #FFC024;
-    --AçıkRenk1: #FAFDFF;
+    --AçıkRenk1: #171F26;
     --AçıkRenk2: #F5F3FE;
     --KülRengi: #232E35;
     --AçıkKülRengi: #656D72;
@@ -25,6 +25,7 @@
     --Sarı: #FFFF24;
     --AçıkGeceYarısı: #0C151D;
     --DahaAçıkGeceYarısı: #33394D;
+    --AçıkRenk1: #FAFDFF;
     --AçıkRenk6: #161F27;
     --AçıkRenk3: #35394a;
     --KülRengi: var(--BeyazRenk);
