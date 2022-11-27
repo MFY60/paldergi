@@ -2,18 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
 :root {
-    --Sarı: #FFC024;
-    --AçıkRenk1: #171F26;
-    --AçıkRenk2: #F5F3FE;
-    --KülRengi: #232E35;
-    --AçıkKülRengi: #656D72;
-    --AçıkRenk3: #f1f1f1;
-    --AçıkRenk4: #f5f5f5;
-    --AçıkRenk5: #D9D9D9;
-    --AçıkRenk6: #FBFBFB;
-    --BeyazRenk: #FFFFFF;
+    --BodyColor: #FAFDFF;
+    --TextColor: #0C151D;
+    --MainColor: #FFC024;
+    --OneColor: #dfe5ea;
+    --TwoColor: #8DACE2;
+    --ThreeColor: #749ADC;
+    --FourColor: #5C89D6;
+    --FiveColor: #4377D0;
+    --SixColor: #4377D0;
+    --White: #FFFFFF;
+    --Black: #000000;
 
-    --GövdeFont: 'Poppins', sans-serif;
+    --GövdeFont: 'Inter', sans-serif;
     --h2FontBoyutu: 1.25rem;
     --h3FontBoyutu: 1rem;
     --NormalFontBoyutu: .938rem;
@@ -22,17 +23,17 @@
 }
 
 [data-theme="dark"] {
-    --Sarı: #FFFF24;
-    --AçıkGeceYarısı: #0C151D;
-    --DahaAçıkGeceYarısı: #33394D;
-    --AçıkRenk1: #FAFDFF;
-    --AçıkRenk6: #161F27;
-    --AçıkRenk3: #35394a;
-    --KülRengi: var(--BeyazRenk);
-    --AçıkKülRengi: #dddddd;
-    --AçıkRenk5: #51576c;
-    --AçıkRenk2: rgba(126, 116, 241, .04);
-    --DamlaArkaPlan: #171F26;
+    --BodyColor: #0C151D;
+    --TextColor: #BED0EF;
+    --MainColor: #FFFF24;
+    --OneColor: #162634;
+    --TwoColor: #20374C;
+    --ThreeColor: #2A4964;
+    --FourColor: #345A7B;
+    --FiveColor: #3D6B93;
+    --SixColor: #477CAB;
+    --White: #000000;
+    --Black: #FFFFFF;
 }
 
 @media screen and (min-width: 968px) {
@@ -46,132 +47,25 @@
 }
 
 ::selection {
-    background: #e7e7e7;
-}
-
-[data-theme="dark"] ::selection {
-    background: var(--AçıkRenk3);
+    background: var(--SixColor);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--AçıkRenk6);
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-track {
-    background-color: var(--AçıkGeceYarısı);
+    background-color: var(--BodyColor);
 }
 
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: var(--Sarı);
+    background-color: var(--MainColor);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--Sarı);
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-nav,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-nav,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+    background-color: var(--MainColor);
 }
 
 section{
     scroll-margin: 20px;
+    display: block;
 }
 
 body {
@@ -182,32 +76,14 @@ body {
     justify-content: center;
 }
 
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 * {
     transition: background .3s;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -220,12 +96,8 @@ body {
     line-height: 28px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: var(--KülRengi);
-}
-
-[data-theme="dark"] body {
-    background: var(--AçıkGeceYarısı);
-    color: var(--AçıkKülRengi);
+    color: var(--TextColor);
+    background: var(--BodyColor);
 }
 
 h4,
@@ -234,13 +106,13 @@ h6 {
     font-family: 'Plus Jakarta Sans', serif;
 }
 
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6 {
-    color: var(--BeyazRenk);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--Black);
 }
 
 .Kapsayıcı {
@@ -251,7 +123,7 @@ h6 {
 }
 
 .OkulÜnvanı {
-    color: var(--Sarı);
+    color: var(--MainColor);
 }
 
 .Slogan {
@@ -274,7 +146,7 @@ h6 {
     text-transform: uppercase;
     padding-left: 32px;
     position: relative;
-    color: var(--AçıkKülRengi);
+    color: var(--TextColor);
     display: inline-block;
 }
 
@@ -285,7 +157,7 @@ h6 {
     top: 10px;
     width: 16px;
     height: 2px;
-    background: var(--AçıkRenk5);
+    background: var(--TwoColor);
 }
 
 .SosyalMedya {
@@ -312,12 +184,12 @@ h6 {
 
 .Etiket {
     padding: 4px 8px;
-    border: 1px solid var(--AçıkRenk3);
+    border: 1px solid var(--ThreeColor);
     border-radius: 4px;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    color: var(--AçıkKülRengi);
+    color: var(--FourColor);
 }
 
 .Başlık {
@@ -331,7 +203,7 @@ h6 {
 .Başlık.sticky {
     background: rgba(255, 255, 255, .85);
     backdrop-filter: blur(5px);
-    border-bottom: 1px solid var(--AçıkRenk3);
+    border-bottom: 1px solid var(--BodyColor);
 }
 
 [data-theme="dark"] .Başlık.sticky {
@@ -347,7 +219,6 @@ h6 {
 .Başlık .Logo {
     width: 45px;
     height: 45px;
-    fill: var(--KülRengi);
     cursor: pointer;
 }
 
@@ -381,7 +252,7 @@ h6 {
 .Başlık .TemaRengiButon svg {
     width: 24px;
     height: 24px;
-    fill: var(--KülRengi);
+    fill: var(--TextColor);
     cursor: pointer;
     transition: all .2s;
 }
@@ -396,7 +267,7 @@ h6 {
 .Başlık .MobilMenüButon {
     width: 24px;
     height: 24px;
-    fill: var(--KülRengi);
+    fill: var(--TextColor);
     cursor: pointer;
     display: none;
 }
@@ -413,10 +284,6 @@ h6 {
     opacity: 0;
     transform: scale(0);
     position: absolute;
-}
-
-[data-theme="dark"] .Başlık .MobilMenüButon {
-    fill: var(--BeyazRenk);
 }
 
 .Hakkimizda .Kapsayıcı {
@@ -445,15 +312,6 @@ h6 {
     margin: 0 0 40px;
 }
 
-.Hakkimizda .İçerik .SosyalMedya svg {
-    fill: var(--KülRengi);
-    transition: all .3s;
-}
-
-.Hakkimizda .İçerik .SosyalMedya svg:hover {
-    opacity: .7;
-}
-
 .OnlarNeDiyor-Kategoriler {
     padding: 104px 0 120px;
 }
@@ -473,27 +331,29 @@ h6 {
 }
 
 .OnlarNeDiyorBölüm {
-    padding: 50px;
-    background: var(--AçıkRenk6);
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--OneColor);
 }
 
 .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 136px;
+    padding-top: 100px;
 }
 
 .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem {
-    background: var(--BeyazRenk);
+    background: var(--BodyColor);
     border-radius: 8px;
     padding: 83px 52px 25px 32px;
     position: relative;
     min-width: 357px;
 }
 
-[data-theme="dark"] .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem {
-    background: var(--DahaAçıkGeceYarısı);
+.OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem {
+    background: var(--TwoColor);
 }
 
 .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem:not(:last-of-type) {
@@ -502,15 +362,11 @@ h6 {
 
 .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem .ProfilResmi {
     border-radius: 100px;
-    border: 2px solid var(--BeyazRenk);
+    border: 2px solid var(--TextColor);
     position: absolute;
     top: -48px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-[data-theme="dark"] .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem .ProfilResmi {
-    border: 2px solid var(--AçıkGeceYarısı);
 }
 
 .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem .Metin {
@@ -527,14 +383,15 @@ h6 {
 }
 
 .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem .MeslekBaşlık {
-    background: var(--AçıkRenk6);
+    background: var(--OneColor);
+    color: var(--Black);
     border: none;
     display: inline-block;
 }
 
 .İletişim {
     padding: 25px;
-    background: var(--AçıkRenk6);
+    background: var(--OneColor);
 }
 
 .İletişim .İletişimKapsayıcı {
@@ -552,13 +409,13 @@ h6 {
     width: 56px;
     height: 56px;
     padding: 16px;
-    background: var(--AçıkRenk2);
+    background: var(--TwoColor);
     border-radius: 16px;
     margin-right: 24px;
 }
 
 .İletişim .İletişimKapsayıcı .İletişimBİlgi .İletişimBİlgiOge .Icon svg {
-    fill: var(--Sarı);
+    fill: var(--MainColor);
 }
 
 .İletişim .İletişimKapsayıcı .İletişimBİlgi .İletişimBİlgiOge .İçerik .Başlık {
@@ -575,7 +432,7 @@ h6 {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: var(--AçıkKülRengi);
+    color: var(--TextColor);
 }
 
 .AltBilgi {
@@ -589,15 +446,11 @@ h6 {
     margin-bottom: 24px;
 }
 
-.AltBilgi .SosyalMedya svg {
-    fill: var(--AçıkKülRengi);
-}
-
 .AltBilgi .Copyright {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: var(--AçıkKülRengi);
+    color: var(--TextColor);
 }
 
 .AltBilgi .Copyright .Kalın {
@@ -660,7 +513,7 @@ h6 {
 
     .Başlık {
         margin-top: 5px;
-        border-bottom: 1px solid var(--AçıkRenk3);
+        border-bottom: 1px solid var(--TextColor);
     }
 
     .Başlık .MobilMenüButon {
@@ -673,8 +526,8 @@ h6 {
         right: 62px;
         top: 70px;
         padding: 16px 24px;
-        background: var(--BeyazRenk);
-        border: 1px solid var(--AçıkRenk3);
+        background: var(--TextColor);
+        border: 1px solid var(--OneColor);
         line-height: 32px;
         width: 170px;
         border-radius: 0 0 4px 4px;
@@ -688,10 +541,6 @@ h6 {
         visibility: visible;
         opacity: 1;
         height: auto;
-    }
-
-    [data-theme="dark"] .Başlık .BaşlıkÇubuğu .BaşlıkÇubuğuLinkler {
-        background: var(--AçıkGeceYarısı);
     }
 
     .Başlık .BaşlıkÇubuğu .BaşlıkÇubuğuLinkler li:not(:last-of-type) {
@@ -712,13 +561,11 @@ h6 {
         margin: 0 0 16px;
     }
 
-    /* Hakkımızda */
     .service-Kategoriler {
         padding: 82px 0 88px;
         margin: 164px 0 0;
     }
 
-    /* PORTFOLIO */
     .portfolio-Kategoriler {
         padding: 80px 0 104px;
     }
@@ -727,7 +574,6 @@ h6 {
         margin-top: 96px;
     }
 
-    /* WORK OnlarNeDiyorS */
     .OnlarNeDiyor-Kategoriler {
         padding: 80px 0 96px;
     }
@@ -932,7 +778,7 @@ h6 {
 }
 
 .Hakkimizda {
-    background: var(--AçıkRenk6);
+    background: var(--OneColor);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -989,7 +835,7 @@ a {
 
 .KategorilerVeri i {
     font-size: 1rem;
-    color: var(--first-color);
+    color: var(--TwoColor);
 }
 
 .Kategorilerİsim {
@@ -1068,7 +914,7 @@ a {
 .KategorilerDamla {
     width: 80px;
     height: 100px;
-    background-color: var(--DamlaArkaPlan);
+    background-color: var(--OneColor);
     border-radius: 3rem;
     place-items: center;
     margin-bottom: 1rem;
@@ -1095,7 +941,7 @@ a {
 
 .KategorilerAltBaşlık {
     font-size: var(--tiny-font-size);
-    color: var(--AçıkRenk1);
+    color: var(--Black);
     cursor: pointer;
 }
 
@@ -1196,8 +1042,8 @@ a {
     z-index: 100;
     box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
     opacity: 1;
-    background: var(--AçıkGeceYarısı);
-    color: var(--KülRengi);
+    background: var(--BodyColor);
+    color: var(--TextColor);
 }
 
 .EmegiGecenler {
