@@ -165,13 +165,18 @@ h6 {
     align-items: center;
 }
 
-.SosyalMedya li svg {
-    width: 24px;
-    height: 24px;
-}
-
 .SosyalMedya li:not(:last-of-type) {
     margin-right: 32px;
+}
+
+.SosyalMedyaButon {
+    width: 30px;
+    height: auto;
+    transition: transform .3s;
+}
+
+.SosyalMedyaButon:hover{
+    transform: scale(1.10);
 }
 
 [data-aos=fade-up] {
@@ -1056,9 +1061,4 @@ a {
 .BölümBaşlık {
     margin-top: 30px;
     padding-top: 30px;
-}
-
-.SosyalMedyaButon {
-    width: 30px;
-    height: auto;
 }
