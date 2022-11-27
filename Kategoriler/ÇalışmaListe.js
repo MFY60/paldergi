@@ -12,10 +12,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
     // İmleç
-    new kursor({
-        type: 4,
-        color: '#FFC024'
-    });
+    function is_touch_enabled() {
+        return ('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0) ||
+            (navigator.msMaxTouchPoints > 0);
+    }
+
+    if (is_touch_enabled()) {
+    }
+    else {
+        new kursor({
+            type: 4,
+            color: '#FFC024'
+        });
+    }
 
     // Yumuşak kaydırma
     document.querySelectorAll('.Başlık .BaşlıkÇubuğu .BaşlıkÇubuğuLinkler a[href^="#"]').forEach(anchor => {

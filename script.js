@@ -19,10 +19,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
     // İmleç
-    new kursor({
-        type: 4,
-        color: '#FFC024'
-    });
+    function is_touch_enabled() {
+        return ('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0) ||
+            (navigator.msMaxTouchPoints > 0);
+    }
+
+    if (is_touch_enabled()) {
+    }
+    else {
+        new kursor({
+            type: 4,
+            color: '#FFC024'
+        });
+    }
 
     // SVG desteği
     svg4everybody();
@@ -68,5 +78,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var mobileMenuToggle = document.getElementsByClassName('MobilMenüButon')[0];
     mobileMenuToggle.onclick = function () {
         document.querySelector(".Başlık .BaşlıkÇubuğu .BaşlıkÇubuğuLinkler").classList.toggle('Aktif');
+    }
+
+    window.onscroll = function (e) {
+        document.querySelector(".Başlık .BaşlıkÇubuğu .BaşlıkÇubuğuLinkler").classList.remove('Aktif');
     }
 })
