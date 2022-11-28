@@ -68,6 +68,8 @@ mainVideo.addEventListener("timeupdate", e => {
 
 mainVideo.addEventListener("loadeddata", () => {
   videoDuration.innerText = formatTime(mainVideo.duration);
+  mainVideo.volume = 1;
+  volumeSlider.value = mainVideo.volume;
 });
 
 const draggableProgressBar = e => {
@@ -79,7 +81,7 @@ const draggableProgressBar = e => {
 
 volumeBtn.addEventListener("click", () => {
   if (!volumeBtn.classList.contains("fa-volume-high")) {
-    mainVideo.volume = 0.5;
+    mainVideo.volume = 1;
     volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
   } else {
     mainVideo.volume = 0.0;
