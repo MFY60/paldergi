@@ -1,4 +1,4 @@
-const container = document.querySelector(".container"),
+const container = document.querySelector(".video-container"),
   mainVideo = container.querySelector("video"),
   videoTimeline = container.querySelector(".video-timeline"),
   progressBar = container.querySelector(".progress-bar"),
