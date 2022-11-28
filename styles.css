@@ -208,7 +208,7 @@ h6 {
 .Başlık.sticky {
     background: rgba(255, 255, 255, .85);
     backdrop-filter: blur(5px);
-    border-bottom: 1px solid var(--BodyColor);
+    border-bottom: 1px solid var(--OneColor);
 }
 
 [data-theme="dark"] .Başlık.sticky {
@@ -531,15 +531,13 @@ h6 {
         right: 62px;
         top: 70px;
         padding: 16px 24px;
-        background: var(--TextColor);
-        border: 1px solid var(--OneColor);
+        background: var(--BodyColor);
         line-height: 32px;
         width: 170px;
         border-radius: 0 0 4px 4px;
         visibility: hidden;
         opacity: 0;
         height: 0;
-        transition: visibility, opacity .3s;
     }
 
     .Başlık .BaşlıkÇubuğu .BaşlıkÇubuğuLinkler.Aktif {

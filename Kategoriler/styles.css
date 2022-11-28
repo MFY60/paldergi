@@ -115,20 +115,26 @@ h6 {
     grid-gap: 10px;
     border: 2px solid transparent;
     cursor: pointer;
-    border-radius: 2rem;
-    transition: all .3s;
+    transition: all .5s;
     vertical-align: text-top;
     text-align: left;
 }
 
 .List-Items-Content:hover {
-    border: 2px solid #0B5AA2;
+    border: 2px solid var(--ThreeColor);
     color: var(--Black);
     font-size: 17px;
+    border-radius: 2rem;
 }
 
 .List-Items-Content span {
     color: var(--MainColor);
     padding-right: 10px;
     vertical-align: text-top;
+}
+
+p{
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
