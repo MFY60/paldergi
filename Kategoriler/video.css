@@ -59,6 +59,8 @@
   content: "";
   bottom: 0;
   width: 100%;
+  margin-left: -50%;
+  margin-right: auto;
   z-index: -1;
   position: absolute;
   height: calc(100% + 35px);
@@ -174,12 +176,14 @@
   color: #efefef;
   margin-left: 15px;
   font-size: 14px;
+  margin-top: -15px;
 }
 
 .video-timer .separator {
-  margin: 0 5px;
   font-size: 16px;
   font-family: "Open sans";
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .playback-content {
@@ -255,7 +259,6 @@
 
   .video-timer .separator {
     font-size: 14px;
-    margin: 0 2px;
   }
 
   .options button :where(i, span) {

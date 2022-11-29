@@ -518,7 +518,11 @@ h6 {
 
     .Başlık {
         margin-top: 5px;
-        border-bottom: 1px solid var(--TextColor);
+        border-bottom: 2px solid var(--BodyColor);
+    }
+
+    .Başlık.sticky{
+        border-bottom: 2px solid var(--OneColor);
     }
 
     .Başlık .MobilMenüButon {
