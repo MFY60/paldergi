@@ -18,22 +18,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         easing: 'cubic-bezier(0.42, 0, 0.12, 1.28)'
     });
 
-    // İmleç
-    function is_touch_enabled() {
-        return ('ontouchstart' in window) ||
-            (navigator.maxTouchPoints > 0) ||
-            (navigator.msMaxTouchPoints > 0);
-    }
-
-    if (is_touch_enabled()) {
-    }
-    else {
-        new kursor({
-            type: 4,
-            color: '#FFC024'
-        });
-    }
-
     // SVG desteği
     svg4everybody();
 
