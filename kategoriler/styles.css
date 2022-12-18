@@ -155,6 +155,17 @@ p {
     color: var(--FourColor);
 }
 
+.Şiir-Kapsayıcı{
+    text-indent: 0 !important; 
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+    width: max-content !important;
+}
+
+.Şiir-Paragraf{
+    text-indent: 0 !important; 
+}
+
 /* Swiper slider */
 .slide-container {
     width: 100%;
