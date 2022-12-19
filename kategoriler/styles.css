@@ -155,15 +155,20 @@ p {
     color: var(--FourColor);
 }
 
-.Şiir-Kapsayıcı{
-    text-indent: 0 !important; 
-    margin-left: auto !important; 
-    margin-right: auto !important; 
+.Şiir-Kapsayıcı {
+    text-indent: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     width: max-content !important;
 }
 
-.Şiir-Paragraf{
-    text-indent: 0 !important; 
+.Şiir-Paragraf {
+    text-indent: 0 !important;
+}
+
+.Kaynakça-Başlık {
+    text-align: left !important;
+    margin-left: 2rem !important;
 }
 
 /* Swiper slider */
@@ -262,4 +267,5 @@ p {
     height: auto;
     width: auto;
 }
+
 /* Swiper slider */
