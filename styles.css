@@ -318,6 +318,10 @@ h6 {
     text-indent: 1rem;
 }
 
+.HakkındaMail{
+    color: var(--Black);
+}
+
 .OnlarNeDiyor-Kategoriler {
     padding: 104px 0 120px;
 }

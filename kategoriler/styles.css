@@ -78,7 +78,7 @@ body {
     font-size: var(--NormalFontBoyutu);
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: var(--TextColor);
@@ -135,8 +135,8 @@ h6 {
 
 p {
     margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: left;
     text-indent: 2rem;
 }
@@ -149,6 +149,7 @@ p {
     line-height: normal;
     margin-bottom: 20px;
     margin-right: 40px;
+    text-indent: 0;
 }
 
 .Mahlas span {
