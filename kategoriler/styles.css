@@ -183,6 +183,19 @@ p {
     margin-left: 2rem !important;
 }
 
+.Container {
+    margin: 0 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .Container {
+        margin: 0 5%;
+    }
+    p{
+        text-indent: 2rem;
+    }
+}
+
 /* Swiper slider */
 .slide-container {
     width: 100%;
@@ -281,16 +294,3 @@ p {
 }
 
 /* Swiper slider */
-
-.Container {
-    margin: 0 20%;
-}
-
-@media screen and (max-width: 768px) {
-    .Container {
-        margin: 0 5%;
-    }
-    p{
-        text-indent: 2rem;
-    }
-}
