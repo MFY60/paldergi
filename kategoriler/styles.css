@@ -142,14 +142,25 @@ p {
 }
 
 .Mahlas {
-    text-align: right;
+    text-align: center;
     word-wrap: break-word;
     margin-bottom: 0;
     color: var(--SixColor);
     line-height: normal;
     margin-bottom: 20px;
-    margin-right: 40px;
+    margin-right: auto;
+    margin-left: auto;
     text-indent: 0;
+    width: max-content;
+    position: relative;
+    right: 0;
+}
+
+.MahlasKapsayıcı{
+    position: relative;
+    margin-left: auto;
+    width: max-content;
+    margin-right: 20px;
 }
 
 .Mahlas span {
