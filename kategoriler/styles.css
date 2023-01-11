@@ -137,8 +137,8 @@ p {
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
-    text-align: left;
-    text-indent: 2rem;
+    text-align: justify;
+    text-indent: 3rem;
 }
 
 .Mahlas {
@@ -156,7 +156,7 @@ p {
     right: 0;
 }
 
-.MahlasKapsayıcı{
+.MahlasKapsayıcı {
     position: relative;
     margin-left: auto;
     width: max-content;
@@ -282,6 +282,15 @@ p {
 
 /* Swiper slider */
 
-.Container{
-    margin: 0 7%;
+.Container {
+    margin: 0 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .Container {
+        margin: 0 5%;
+    }
+    p{
+        text-indent: 2rem;
+    }
 }
