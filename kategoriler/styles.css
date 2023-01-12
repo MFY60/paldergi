@@ -273,6 +273,11 @@ p {
     background-color: #4070F4;
 }
 
+.swiper-page{
+    margin: 0 auto;
+    transform: translateX(0) !important;
+}
+
 @media screen and (max-width: 768px) {
     .slide-content {
         margin: 0 10px;
