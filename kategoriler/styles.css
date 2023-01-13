@@ -191,9 +191,26 @@ p {
     .Container {
         margin: 0 5%;
     }
-    p{
+
+    p {
         text-indent: 2rem;
     }
+
+    .Image-With-Text img {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+
+.Image-With-Text img {
+    width: 320px;
+    float: left;
+    border-radius: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Swiper slider */
@@ -273,7 +290,7 @@ p {
     background-color: #4070F4;
 }
 
-.swiper-page{
+.swiper-page {
     margin: 0 auto;
     transform: translateX(0) !important;
 }
@@ -289,8 +306,9 @@ p {
 }
 
 .image-content {
-    height: 60vh;
+    height: max-content;
     padding: 0;
+    margin-bottom: 2rem;
 }
 
 .card-img {
