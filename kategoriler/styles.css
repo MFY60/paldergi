@@ -187,6 +187,17 @@ p {
     margin: 0 20%;
 }
 
+.ItemImg{
+    max-width: 15px;
+    vertical-align: middle;
+    opacity: .8;
+}
+
+.Şiir-Başlık{
+    text-align: left;
+    text-indent: 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
     .Container {
         margin: 0 5%;
