@@ -334,4 +334,66 @@ p {
     width: auto;
 }
 
-/* Swiper slider */
+/* Video Player */
+.video__content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.video__button {
+    position: absolute;
+    right: 1rem;
+    bottom: -1rem;
+    padding: 1rem 1.5rem;
+}
+
+.video__button-icon {
+    font-size: 1.2rem;
+}
+
+video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--BodyColor);
+    color: var(--Black);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: .3s;
+    border: 2px solid var(--FourColor);
+    border-radius: 2rem;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    background-color: var(--TwoColor);
+}
+
+.button--flex {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.button--link {
+    background: none;
+    padding: 0;
+}
+
+.button--link:hover {
+    background: none;
+}
