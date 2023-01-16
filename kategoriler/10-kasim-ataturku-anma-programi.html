@@ -16,6 +16,8 @@
     <title>10 Kasım Atatürk'ü Anma Programı</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut Icon" href="./Kaynaklar/Görüntü/favicon.png" type="image/x-Icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,11 +29,27 @@
             Şirinoğulları'nın konuşması, Atatürk'ten Son Mektup şiirinin okunması ve okul korosunun sunumuyla sona
             ermiştir.
         </p>
+
+        <div class="video__content" style="aspect-ratio: 9/16 !important; max-height: 80vh !important;">
+            <video id="video-file" style="aspect-ratio: 9/16 !important; max-height: 80vh !important;">
+                <source src="./Video/10 Kasım Programı.mp4" type="video/mp4">
+            </video>
+            <button class="button button--flex video__button" id="video-button">
+                <i class="ri-play-line video__button-icon" id="video-icon"></i>
+            </button>
+        </div>
     </main>
 
     <div class="slide-container swiper" data-aos="fade-right" data-aos-delay="200">
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./Resimler/10 Kasım Programı 3.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
                 <div class="card swiper-slide">
                     <div class="image-content">
                         <div class="card-image">
