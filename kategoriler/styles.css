@@ -62,7 +62,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--MainColor);
+    background-color: var(--Black);
+    border-radius: 2rem;
 }
 
 * {
