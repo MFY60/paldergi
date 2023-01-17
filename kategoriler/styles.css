@@ -352,7 +352,7 @@ p {
 
 .video__button {
     position: absolute;
-    right: 1rem;
+    right: 6.5rem;
     bottom: -1rem;
     padding: 1rem 1.5rem;
 }
@@ -401,4 +401,12 @@ video {
 
 .button--link:hover {
     background: none;
+}
+
+.VideoBack{
+    right: 12.5rem;
+}
+
+.VideoForward{
+    right: .5rem;
 }

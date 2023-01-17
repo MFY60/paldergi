@@ -450,3 +450,22 @@ try {
     videoFile.addEventListener('ended', finalVideo)
 } catch (error) {
 }
+
+try {
+    const videoButtonForward = document.getElementById('video-button-forward'),
+        videoButtonBack = document.getElementById('video-button-back')
+
+
+    videoButtonForward.addEventListener('click', VideoForward)
+    function VideoForward() {
+        var video = document.getElementById("video-file");
+        video.currentTime += 15;
+    }
+
+    videoButtonBack.addEventListener('click', VideoBack)
+    function VideoBack() {
+        var video = document.getElementById("video-file");
+        video.currentTime -= 15;
+    }
+} catch (error) {
+}
