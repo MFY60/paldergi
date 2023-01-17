@@ -469,3 +469,101 @@ try {
     }
 } catch (error) {
 }
+
+
+/*==================== Video1 ====================*/
+try {
+    const videoFile = document.getElementById('video-file1'),
+        videoButton = document.getElementById('video-button1'),
+        videoIcon = document.getElementById('video-icon1')
+
+    function playPause() {
+        if (videoFile.paused) {
+            videoFile.play()
+            videoIcon.classList.add('ri-pause-line')
+            videoIcon.classList.remove('ri-play-line')
+        }
+        else {
+            videoFile.pause();
+            videoIcon.classList.remove('ri-pause-line')
+            videoIcon.classList.add('ri-play-line')
+
+        }
+    }
+    videoButton.addEventListener('click', playPause)
+
+    function finalVideo() {
+        videoIcon.classList.remove('ri-pause-line')
+        videoIcon.classList.add('ri-play-line')
+    }
+    videoFile.addEventListener('ended', finalVideo)
+} catch (error) {
+}
+
+try {
+    const videoButtonForward = document.getElementById('video-button-forward1'),
+        videoButtonBack = document.getElementById('video-button-back1')
+
+
+    videoButtonForward.addEventListener('click', VideoForward)
+    function VideoForward() {
+        var video = document.getElementById("video-file1");
+        video.currentTime += 15;
+    }
+
+    videoButtonBack.addEventListener('click', VideoBack)
+    function VideoBack() {
+        var video = document.getElementById("video-file1");
+        video.currentTime -= 15;
+    }
+} catch (error) {
+}
+
+
+/*==================== Video2 ====================*/
+try {
+    const videoFile = document.getElementById('video-file2'),
+        videoButton = document.getElementById('video-button2'),
+        videoIcon = document.getElementById('video-icon2')
+
+    function playPause() {
+        if (videoFile.paused) {
+            videoFile.play()
+            videoIcon.classList.add('ri-pause-line')
+            videoIcon.classList.remove('ri-play-line')
+        }
+        else {
+            videoFile.pause();
+            videoIcon.classList.remove('ri-pause-line')
+            videoIcon.classList.add('ri-play-line')
+
+        }
+    }
+    videoButton.addEventListener('click', playPause)
+
+    function finalVideo() {
+        videoIcon.classList.remove('ri-pause-line')
+        videoIcon.classList.add('ri-play-line')
+    }
+    videoFile.addEventListener('ended', finalVideo)
+} catch (error) {
+}
+
+try {
+    const videoButtonForward = document.getElementById('video-button-forward2'),
+        videoButtonBack = document.getElementById('video-button-back2')
+
+
+    videoButtonForward.addEventListener('click', VideoForward)
+    function VideoForward() {
+        var video = document.getElementById("video-file2");
+        video.currentTime += 15;
+    }
+
+    videoButtonBack.addEventListener('click', VideoBack)
+    function VideoBack() {
+        var video = document.getElementById("video-file2");
+        video.currentTime -= 15;
+    }
+} catch (error) {
+}
