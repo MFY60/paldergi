@@ -50,21 +50,43 @@
     background: var(--SixColor);
 }
 
-::-webkit-scrollbar-track {
-    background-color: var(--BodyColor);
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    background: #0c111b;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: var(--MainColor);
+::-webkit-scrollbar-button {
+    width: 3px;
+    height: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--Black);
-    border-radius: 2rem;
+    background: var(--TwoColor);
+    border-radius: 50px;
+    background-clip: padding-box;
 }
 
-section{
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ThreeColor);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--TextColor);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--BodyColor);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+section {
     scroll-margin: 20px;
     display: block;
 }
@@ -176,7 +198,7 @@ h6 {
     transition: transform .3s;
 }
 
-.SosyalMedyaButon:hover{
+.SosyalMedyaButon:hover {
     transform: scale(1.10);
 }
 
@@ -319,7 +341,7 @@ h6 {
     text-indent: 1rem;
 }
 
-.HakkındaMail{
+.HakkındaMail {
     color: var(--Black);
 }
 
@@ -527,7 +549,7 @@ h6 {
         border-bottom: 2px solid var(--BodyColor);
     }
 
-    .Başlık.sticky{
+    .Başlık.sticky {
         border-bottom: 2px solid var(--OneColor);
     }
 
@@ -594,7 +616,7 @@ h6 {
     .OnlarNeDiyor-Kategoriler .Kapsayıcı {
         flex-wrap: wrap;
     }
-    
+
     .OnlarNeDiyor-Kategoriler .İçerik {
         padding-top: 40px;
     }
@@ -608,10 +630,6 @@ h6 {
         width: 4px;
         height: 4px;
         border-radius: 10px;
-    }
-
-    .EmeğiGeçenler-Kategoriler {
-        padding: 80px 0;
     }
 
     .OnlarNeDiyorBölüm {
@@ -856,8 +874,8 @@ a {
     font-weight: 500;
     line-height: 18px;
     text-align: center;
-    
-    word-wrap: break-word;  
+
+    word-wrap: break-word;
 }
 
 .Kategorilerlevel {
@@ -865,6 +883,7 @@ a {
 }
 
 @media screen and (min-width: 776px) {
+
     .projectsİçerik,
     .Kategorilerİçerik {
         grid-template-columns: repeat(2, 332px);
@@ -1014,63 +1033,150 @@ a {
     }
 }
 
-.EmegiGecenler-kutu {
-    width: 300px;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    cursor: default;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.EmegiGecenler-kutu h2 {
-    padding: 0px 0px;
-    font-size: 20px;
-    cursor: default;
-}
-
-.EmegiGecenler-kutu ul {
-    position: relative;
-    width: 100%;
-    display: table;
-    cursor: default;
-}
-
-.EmegiGecenler-kutu ul:hover li {
-    opacity: 0.4;
-}
-
-.EmegiGecenler-kutu ul li {
-    list-style: none;
-    padding: 10px;
-    margin: 0px;
-    width: 100%;
-    border-radius: 5rem;
-    transition: all .3s;
-}
-
-.EmegiGecenler-kutu ul li:hover {
-    transform: scale(1.1);
-    z-index: 100;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
-    opacity: 1;
-    background: var(--BodyColor);
-    color: var(--TextColor);
-}
-
-.EmegiGecenler {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .BölümBaşlık {
     margin-top: 30px;
     padding-top: 30px;
 }
 
-.EmegiGecenlerSection{
-    columns: 3 auto;
+.page-wrapper {
+    float: left;
+    clear: both;
+    padding: 2rem;
+}
+
+.feed {
+    width: max-content;
+    max-width: 90%;
+    margin: 0 auto;
+    background: var(--BodyColor);
+    color: var(--Black);
+    perspective: 100px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    background: var(--BodyColor);
+    margin-bottom: 2px;
+}
+
+.item:after {
+    display: block;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--BodyColor), var(--MainColor));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item .user {
+    flex: 0 1 auto;
+    width: 44px;
+    height: 44px;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.item .meta {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-right: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.page-wrapper h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 3px 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.page-wrapper p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--SixColor);
+}
+
+.TeacherIcon {
+    background-image: url(kategoriler/Kaynaklar/Görüntü/TeacherIcon.png);
+}
+
+.DeveloperIcon {
+    background-image: url(kategoriler/Kaynaklar/Görüntü/DeveloperIcon.png);
+}
+
+.WriterIcon {
+    background-image: url(kategoriler/Kaynaklar/Görüntü/WriterIcon.png);
+}
+
+.DesignerIcon {
+    background-image: url(kategoriler/Kaynaklar/Görüntü/DesignerIcon.png);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+
+}
+
+.flex-item-left {
+    flex: 50%;
+    place-items: center;
+}
+
+.flex-item-right {
+    flex: 50%;
+}
+
+@media (max-width: 893px) {
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+
+    .EkipResmi {
+        width: 100%;
+        margin-left: 15% !important;
+    }
+}
+
+.EmegiGecenlerImages {
+    margin-top: 1rem !important;
+    height: max-content;
+    width: max-content;
+}
+
+.EkipResmi {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 4rem;
+    max-width: 70%;
+    height: auto;
+    border-radius: 2rem;
+    transition: transform .3s;
+}
+
+.EkipResmi:hover {
+    transform: scale(1.06);
+}
+
+#EmegiGecenler{
+    scroll-margin-top: 5rem;
 }
