@@ -1184,3 +1184,85 @@ a {
 #EmegiGecenler {
     scroll-margin-top: 5rem;
 }
+
+
+.Duyuru-Card {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    background: var(--OneColor);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.4);
+    padding: 1rem 0;
+    padding-top: 0;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.Duyuru-Card a {
+    text-decoration: none;
+}
+
+.Duyuru-Card .Duyuru-meta {
+    display: block;
+    float: left;
+    margin-right: .5rem;
+    margin-left: 1rem;
+    width: 16px;
+    height: 16px;
+}
+
+.Duyuru-Card .Duyuru-meta .Duyuru-timestamp {
+    font-size: .75rem;
+    color: var(--FiveColor);
+    line-height: 18px;
+    display: block;
+    margin-top: 0px;
+}
+
+
+.Duyuru-Card .Duyuru-photo {
+    width: max-content;
+    display: block;
+    margin-bottom: .75rem;
+    max-height: 50vh;
+    object-fit: scale-down;
+    border-radius: 2rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.Duyuru-Card .Duyuru-title,
+.Duyuru-Card .Duyuru-description {
+    padding: 0 1rem;
+}
+
+.Duyuru-Card .Duyuru-title {
+    font-size: 1.75rem;
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: var(--Black);
+    margin-top: .5rem;
+    font-weight: b700;
+}
+
+.Duyuru-description {
+    text-indent: 1rem;
+}
+
+.Duyuru-Card .Duyuru-description {
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: var(--TextColor);
+}
+
+.Duyuru-Card .Duyuru-description p {
+    line-height: 1.51;
+    margin-top: 0;
+}
+
+.Duyuru-Card .Duyuru-description p:last-of-type {
+    margin-bottom: 0;
+}
