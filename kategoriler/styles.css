@@ -57,28 +57,34 @@
     height: 14px;
     background: #0c111b;
 }
- ::-webkit-scrollbar-button {
+
+::-webkit-scrollbar-button {
     width: 3px;
     height: 0px;
 }
- ::-webkit-scrollbar-thumb {
+
+::-webkit-scrollbar-thumb {
     background: var(--TwoColor);
     border-radius: 50px;
     background-clip: padding-box;
 }
- ::-webkit-scrollbar-thumb:hover {
+
+::-webkit-scrollbar-thumb:hover {
     background: var(--ThreeColor);
     background-clip: padding-box;
 }
- ::-webkit-scrollbar-thumb:active {
+
+::-webkit-scrollbar-thumb:active {
     background: var(--TextColor);
     background-clip: padding-box;
 }
- ::-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track {
     background: var(--BodyColor);
     border-radius: 50px;
 }
- ::-webkit-scrollbar-corner {
+
+::-webkit-scrollbar-corner {
     background: transparent;
 }
 
@@ -217,6 +223,17 @@ p {
 .Şiir-Başlık {
     text-align: left;
     text-indent: 1.5rem;
+}
+
+.column {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        column-count: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -419,10 +436,10 @@ video {
     background: none;
 }
 
-.VideoBack{
+.VideoBack {
     right: 12.5rem;
 }
 
-.VideoForward{
+.VideoForward {
     right: .5rem;
 }

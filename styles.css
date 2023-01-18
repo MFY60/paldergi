@@ -1128,6 +1128,10 @@ a {
     background-image: url(kategoriler/Kaynaklar/Görüntü/DesignerIcon.png);
 }
 
+.VideoEditorIcon {
+    background-image: url(kategoriler/Kaynaklar/Görüntü/VideoEditör.png);
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;

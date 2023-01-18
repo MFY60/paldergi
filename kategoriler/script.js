@@ -433,6 +433,12 @@ try {
             videoFile.play()
             videoIcon.classList.add('ri-pause-line')
             videoIcon.classList.remove('ri-play-line')
+
+            const OtherVideo1 = document.getElementById('video-file1'),
+                OtherVideo2 = document.getElementById('video-file2')
+
+            OtherVideo1.pause();
+            OtherVideo2.pause();
         }
         else {
             videoFile.pause();
@@ -482,6 +488,12 @@ try {
             videoFile.play()
             videoIcon.classList.add('ri-pause-line')
             videoIcon.classList.remove('ri-play-line')
+
+            const OtherVideo1 = document.getElementById('video-file'),
+                OtherVideo2 = document.getElementById('video-file2')
+
+            OtherVideo1.pause();
+            OtherVideo2.pause();
         }
         else {
             videoFile.pause();
@@ -531,6 +543,12 @@ try {
             videoFile.play()
             videoIcon.classList.add('ri-pause-line')
             videoIcon.classList.remove('ri-play-line')
+
+            const OtherVideo1 = document.getElementById('video-file1'),
+                OtherVideo2 = document.getElementById('video-file')
+
+            OtherVideo1.pause();
+            OtherVideo2.pause();
         }
         else {
             videoFile.pause();
