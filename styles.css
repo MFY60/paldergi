@@ -89,6 +89,8 @@
 section {
     scroll-margin: 20px;
     display: block;
+    border-radius: 2rem;
+    margin: 0 2%;
 }
 
 body {
@@ -546,7 +548,6 @@ h6 {
 
     .Başlık {
         margin-top: 5px;
-        border-bottom: 2px solid var(--BodyColor);
     }
 
     .Başlık.sticky {
@@ -1237,7 +1238,7 @@ a {
     padding: 1rem 0;
 }
 
-.FullScreenContainer{
+.FullScreenContainer {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1252,14 +1253,15 @@ a {
     padding: 2rem;
     visibility: hidden;
     opacity: 0;
+    transition: opacity .3s;
 }
 
-.FullScreenContainer.shown{
+.FullScreenContainer.shown {
     visibility: visible;
     opacity: 1;
 }
 
-.FullScreenContainer img{
+.FullScreenContainer img {
     position: relative;
     max-width: 100%;
     max-height: 100%;

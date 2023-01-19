@@ -585,3 +585,31 @@ try {
     }
 } catch (error) {
 }
+
+/* Zoom image on click */
+try {
+    function ZoomImgOpen() {
+        var container = document.querySelector(".FullScreenContainer")
+        container.classList.add('shown')
+        DisableScroll();
+    }
+
+    function ZoomImgClose() {
+        var container = document.querySelector(".FullScreenContainer")
+        container.classList.remove('shown')
+        EnableScroll();
+    }
+
+    function DisableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            window.onscroll = function () {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+    }
+
+    function EnableScroll() {
+        window.onscroll = function () { };
+    }
+} catch (error) {
+}
