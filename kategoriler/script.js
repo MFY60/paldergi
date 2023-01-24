@@ -613,3 +613,13 @@ try {
     }
 } catch (error) {
 }
+
+try {
+    const PageBackIcon = document.querySelector('.PageBackIcon')
+
+    PageBackIcon.addEventListener('click', BackPage)
+    function BackPage() {
+        window.history.go(-1)
+    }
+} catch (error) {
+}
