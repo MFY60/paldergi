@@ -489,3 +489,11 @@ video {
 .PageBackIcon:hover {
     background: rgba(0, 0, 0, 0.4);
 }
+
+.ProfilFoto{
+    margin-top: 2rem; 
+    border-radius: 50%; 
+    border: solid white 2px; 
+    width: 100px; height: auto; 
+    margin-bottom: -30px;
+}

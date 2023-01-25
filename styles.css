@@ -367,8 +367,8 @@ h6 {
 
 .OnlarNeDiyorBölüm {
     margin-bottom: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: var(--OneColor);
 }
 
@@ -633,10 +633,6 @@ h6 {
         border-radius: 10px;
     }
 
-    .OnlarNeDiyorBölüm {
-        padding: 80px 0 88px;
-    }
-
     .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı {
         padding-top: 104px;
     }
@@ -741,8 +737,6 @@ h6 {
 
 .İletişimBİlgi {
     justify-self: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .Logo img {
@@ -904,7 +898,6 @@ a {
 .KategorilerKapsayıcı {
     row-gap: 3.5rem;
     padding: 25px;
-    margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
