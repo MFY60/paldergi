@@ -120,3 +120,14 @@ try {
     }
 } catch (error) {
 }
+
+try {
+    function updateCounter() {
+        fetch('https://api.countapi.xyz/hit/paldergi.com/anasayfa/?amount=1')
+            .then(res => res.json())
+            .then(data => counterElement.innerHTML = "Toplam ziyaret edilme: " + data.value)
+    }
+    updateCounter()
+    counterElement = document.getElementsByClassName('VisitorCounter')[0];
+} catch (error) {
+}
