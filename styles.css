@@ -385,6 +385,7 @@ h6 {
     padding: 83px 52px 25px 32px;
     position: relative;
     min-width: 357px;
+    border-radius: 2rem;
 }
 
 .OnlarNeDiyorBölüm .OnlarNeDiyorItemKapsayıcı .OnlarNeDiyoritem {
@@ -422,6 +423,8 @@ h6 {
     color: var(--Black);
     border: none;
     display: inline-block;
+    border-radius: 2rem;
+    padding: .4rem;
 }
 
 .İletişim {
