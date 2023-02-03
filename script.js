@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     // Koyu tema
     try {
+        try {
+            if(localStorage.getItem("theme-color") == null){
+                localStorage.setItem("theme-color", "dark")
+            }
+        } catch (error) {
+        }
         var prevAktifTheme = localStorage.getItem("theme-color");
         document.documentElement.setAttribute("data-theme", prevAktifTheme ? prevAktifTheme : "light");
         var themeToggle = document.getElementsByClassName('TemaRengiButon')[0];
