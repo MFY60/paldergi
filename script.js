@@ -126,7 +126,8 @@ try {
     }
 } catch (error) {
 }
-/* 
+
+
 try {
     function updateCounter() {
         fetch('https://api.countapi.xyz/hit/paldergi.com/anasayfa/?amount=1')
@@ -136,4 +137,3 @@ try {
     updateCounter()
 } catch (error) {
 }
- */
