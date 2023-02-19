@@ -1275,7 +1275,7 @@ a {
     font-family: 'Alegreya Sans', sans-serif;
     color: var(--Black);
     margin-top: .5rem;
-    font-weight: b700;
+    font-weight: 700;
 }
 
 .Duyuru-description {
@@ -1296,4 +1296,30 @@ a {
 
 .Duyuru-Card .Duyuru-description p:last-of-type {
     margin-bottom: 0;
+}
+
+/* Yeni eklenenler */
+
+.YeniEklenenlerBölüm {
+    background-color: var(--BodyColor) !important;
+}
+
+.YeniEklenenlerItem {
+    background-color: var(--TwoColor) !important;
+    height: 15rem !important;
+    transition: all .3s;
+}
+
+.YeniEklenenlerItem:hover {
+    background-color: var(--FiveColor) !important;
+    transform: scale(1.1) !important;
+}
+
+.YeniEklenenlerProfilResmi {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.SonEklenenlerAçıklama {
+    padding-bottom: 20px !important;
 }
