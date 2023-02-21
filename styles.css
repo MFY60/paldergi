@@ -1306,18 +1306,20 @@ a {
 
 .YeniEklenenlerItem {
     background-color: var(--TwoColor) !important;
+    transition: all .3s !important;
     height: 15rem !important;
-    transition: all .3s;
 }
 
 .YeniEklenenlerItem:hover {
     background-color: var(--FiveColor) !important;
-    transform: scale(1.1) !important;
+    transform: scale(.9) !important;
 }
 
 .YeniEklenenlerProfilResmi {
     border-radius: 0 !important;
     border: none !important;
+    width: 100px !important;
+    height: 100px !important;
 }
 
 .SonEklenenlerAçıklama {
