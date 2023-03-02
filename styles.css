@@ -111,6 +111,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+img{
+    -webkit-user-drag: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;

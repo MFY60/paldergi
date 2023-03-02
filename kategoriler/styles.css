@@ -113,6 +113,10 @@ body {
     overflow-y: scroll;
 }
 
+img {
+    -webkit-user-drag: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
