@@ -16,6 +16,8 @@
     <title>29 Ekim Cumhuriyet Bayramı Programı (2023)</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut Icon" href="./Kaynaklar/Görüntü/favicon.png" type="image/x-Icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,6 +29,40 @@
             Öğretmenimiz sayın Jale Demirci'nin yönetimindeki 29 Ekim oratoryo gösterisi ve Müzik Öğretmenimiz sayın
             Sema Azeri'nin yönetimindeki müzik gösterisiyle program sona ermiştir.
         </p>
+
+        <div class="video__content">
+            <video id="video-file1">
+                <source src="./Video/29 Ekim 2023 Etkinliği (1).mp4" type="video/mp4">
+            </video>
+            <div>
+                <button class="button button--flex video__button" id="video-button1">
+                    <i class="ri-play-line video__button-icon" id="video-icon1"></i>
+                </button>
+                <button class="button button--flex video__button VideoBack" id="video-button-back1">
+                    <i class="ri-skip-back-line video__button-icon"></i>
+                </button>
+                <button class="button button--flex video__button VideoForward" id="video-button-forward1">
+                    <i class="ri-skip-forward-line video__button-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="video__content">
+            <video id="video-file">
+                <source src="./Video/29 Ekim 2023 Etkinliği (2).mp4" type="video/mp4">
+            </video>
+            <div>
+                <button class="button button--flex video__button" id="video-button">
+                    <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                </button>
+                <button class="button button--flex video__button VideoBack" id="video-button-back">
+                    <i class="ri-skip-back-line video__button-icon"></i>
+                </button>
+                <button class="button button--flex video__button VideoForward" id="video-button-forward">
+                    <i class="ri-skip-forward-line video__button-icon"></i>
+                </button>
+            </div>
+        </div>
     </main>
 
     <div class="slide-container swiper" data-aos="fade-right" data-aos-delay="200">
